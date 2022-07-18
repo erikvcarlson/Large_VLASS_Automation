@@ -114,10 +114,11 @@ def carlson_editimlist_prep(msfile, imagesize, phase_center, matchregex=['^0', '
 
     return fieldlist
 
-Full_Measurement_Set = 'example.ms'
+Full_Measurement_Set = '/lustre/aoc/observers/nm-11325/data/example.ms'
 FIRST_Style_Coords = 'J2000 00:00:00.0 +00.00.00.0'
 outputvisname = 'J0000+0000_split.ms'
 
 
 split_list = carlson_editimlist_prep(Full_Measurement_Set,500,FIRST_Style_Coords, matchregex=['^0', '^1', '^2']) 
-split(vis = Full_Measurement_Set, outputvis = 'J0000+0000_split.ms', data = 'corrected', field = split_list)  
+print(split_list)
+split(vis = Full_Measurement_Set, outputvis = 'J0000+0000_split.ms', datacolumn = 'corrected', field = split_list)  
