@@ -1,0 +1,5 @@
+imagename='VLASS_SE_J0000+0000_c0.6arcsec'
+phasecenter='J2000 00:00:00.000 +00.00.00.000'
+imaging_mode='VLASS-SE-CONT-MOSAIC'
+imsize=[3132,3132]
+cell='0.6arcsec'
