@@ -6,6 +6,7 @@
 #SBATCH --mail-type=END,FAIL                 # Send mail on begin, end and abort
 #SBATCH --mail-user=erikvcarlson@uri.edu
 
+module purge
 module load Xvfb/1.20.13-GCCcore-11.2.0
 module load CASA
 
